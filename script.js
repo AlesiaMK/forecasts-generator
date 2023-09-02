@@ -13,3 +13,12 @@
 /* При генерации нового предсказания старое предсказание должно добавляться в начало списка «Мои предсказания» — .forecasts  */
 
 /* Для добавления предсказания в список воспользуйся шаблоном forecast-item */
+function generate(min, max) {
+    let num = Math.random() * (max - min) + min;
+    return Math.round(num);
+};
+
+const button = document.querySelector('.forecast-btn');
+const forecasts = document.querySelector('.forecasts');
+
+const predictionOne = 'Ты сразу начнешь понимать JS';
